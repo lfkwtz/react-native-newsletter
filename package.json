@@ -1,0 +1,9 @@
+{
+  "name": "react-native-newsletter",
+  "version": "0.0.1",
+  "description": "React Native Newsletter",
+  "main": "index.js",
+  "repository": "https://github.com/lfkwtz/react-native-newsletter",
+  "author": "Michael Lefkowitz <lefkowitz.michael@gmail.com>",
+  "license": "MIT"
+}
