@@ -7,11 +7,14 @@ async function asyncForEach(array, callback) {
   }
 }
 
-const repos = ["x"];
+const repos = [
+  //
+  "x",
+];
 
 let output = "";
 
-asyncForEach(repos, async element => {
+asyncForEach(repos, async (element) => {
   if (element !== "x") {
     let url = `https://api.github.com/repos/${element.split("com/")[1]}`;
     await axios.get(url).then(({ data }) => {
@@ -20,7 +23,7 @@ asyncForEach(repos, async element => {
       }\n\n`;
     });
   } else {
-    fs.writeFile("output.md", output, err => {
+    fs.writeFile("output.md", output, (err) => {
       if (err) throw err;
       console.log("output saved!");
     });
